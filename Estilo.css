@@ -1,0 +1,217 @@
+/*Quito los margenes de todo el documento html*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*Creo una fuente con archivos locales*/
+@font-face{
+	font-family: "simpsons";
+	src:url(fonts/akbar.ttf), url(fonts/akbar.eot), url(fonts/akbar.otf);
+}
+
+/*Estilo de la imagen de la cabecera (tamaño y centrado)*/
+img.header{
+	display: block;
+	margin: auto;
+	height: 360px;
+	width: 855px;
+}
+
+/*Estilo del body*/
+body{
+	background-color: #FFD90F;
+	font-family:Arial, Helvetica, sans-serif;
+	background: url(background/backgroundSimpsons.jpg);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+/*Estilo de la barra de navegación (tamaño y centrado)*/
+header nav{
+	width: 855px;
+	height: 40px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*Quita el estilo del menú (puntitos, etc.)
+y lo deja sin estilo*/
+header nav ul{
+	list-style: none;
+}
+
+/*Coloca las etiquetas <li> una al lado de la otra, 
+centra el texto de cada una y ajusta el alto de las mismas*/
+header nav > ul > li{
+	text-align: center;
+	float: left;
+	height: 40px;
+}
+
+/*Ajusta el largo de las las etiquetas <li> para que ocupen el
+mismo largo que la imagen*/
+header nav > ul > li{
+	width: 13%;
+}
+
+/*El tamaño del item Galeria de fotos debe ser más
+grande que el resto*/
+header nav > ul > li.grandeGal{
+	width: 18%;
+}
+
+/*El item Curiosidades tambien*/
+header nav > ul > li.grandeCur{
+	width: 17%;
+}
+
+/*Estilo de los enlaces de la cabecera*/
+header nav a{
+	display: block;
+	padding-top: 10px;
+	font-family: "simpsons";
+	font-size: 14px;
+	color: white;
+	text-decoration: none;
+	background-color: gray;
+	height: 30px;
+}
+
+/*Esconde los items del submenú y le ajusta el tamaño*/
+header li ul{
+	display: none;
+	position: absolute;
+	min-width: 140px;
+}
+
+/*Indico que cuando se pase el cursor por
+el menú, se despliegue el submenú*/
+header nav li:hover > ul{
+	display: block;
+}
+
+/*Cambia de color al clickear o al pasar el mouse*/
+li a:hover, li a:active{
+	background-color: #434343;
+}
+
+/*Estilo de la etiqueta section (es como un div pero en html5)*/
+section{
+	width: 855px;
+	background-color: #41BCE3;
+	margin: auto;
+	padding-bottom: 50px;
+}
+
+/*Estilo de la etiqueta <h2>*/
+section h2{
+	width: 855px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	font-family: "simpsons";
+	color: #FFD90F;
+	text-indent: 40px;
+	text-shadow: 2px 2px black;
+}
+
+/*Estilo de la etiqueta <article>
+(esta adentro de <section> y contiene 
+las frases)*/
+article{
+	margin: auto;
+	width: 95%;
+	border-style: inset;
+	border-width: 5px;
+	border-color: #939698;
+	text-indent: 20px;
+	font-style: oblique;
+	font-weight: bold;
+	color: #1C1C1C;
+	background-color: #AEDFF2;
+}
+
+/*estilo de los parafos de cada frase*/
+article p{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*Estilo de la etiqueta <h1>*/
+section h1{
+	width: 855px;
+	padding-top: 50px;
+	padding-bottom: 40px;
+	text-align: center;
+	font-size: 36px;
+	font-family: "simpsons";
+	color: #FFD90F;
+	text-shadow: 2px 2px black;
+}
+
+/*Estilo de la barra de navegación de personajes (tamaño y centrado)*/
+section nav{
+	width: 855px;
+	height: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 70px;
+}
+
+/*Quita el estilo del menú (puntitos, etc.)
+y lo deja sin estilo*/
+section nav ul{
+	list-style: none;
+}
+
+/*Centra el texto de cada <li> y ajusta el alto de las mismas*/
+section nav > ul > li{
+	text-align: center;
+	height: 40px;
+}
+
+/*Estilo de los enlaces del menú personajes*/
+section nav a{
+	display: block;
+	padding-top: 10px;
+	font-family: "simpsons";
+	font-size: 14px;
+	color: white;
+	text-decoration: none;
+	background-color: gray;
+	height: 30px;
+}
+
+/*Todas las img dentro de section tienen este estilo*/
+section img{
+	display: block;
+	margin: auto;
+	border-style: inset;
+	border-width: 5px;
+	border-color: #939698;
+}
+
+/*Todas las h4 dentro de section tienen este estilo*/
+section h4{
+	font-family: "simpsons";
+	text-align: center;
+	padding-bottom: 70px;
+}
+
+/*Todas las iframe dentro de section tienen este estilo*/
+iframe{
+	display: block;
+	margin: auto;
+}
+
+/*Estilo de los <p> que descienden directamente de section*/
+section > p{
+	font-size: 18px;
+	text-indent: 20px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
